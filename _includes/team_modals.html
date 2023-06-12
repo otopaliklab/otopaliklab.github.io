@@ -1,0 +1,47 @@
+<!-- Team Modals -->
+{% for person in site.team %}
+<div
+  class="team-modal modal fade"
+  id="person{{ forloop.index }}"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="modal-body">
+              <!-- Person Details Go Here -->
+              <h2>{{ person.title }}</h2>
+              <p class="item-intro text-muted">{{ person.subtitle }}</p>
+              <img
+                class="img-fluid d-block mx-auto"
+                src="{{ person.image }}"
+                alt="{{ person.alt }}"
+              />
+              <p>{{ person.content }}</p>
+              <button
+                class="btn btn-primary"
+                data-dismiss="modal"
+                type="button"
+              >
+                <i class="fas fa-times"></i>
+                {{ site.data.sitetext[site.locale].team.closebutton |
+                default: "Close" }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+<!-- End Team Modals -->

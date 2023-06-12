@@ -1,0 +1,28 @@
+<!-- Contact -->
+<section class="page-section" id="{{ site.data.sitetext[site.locale].contact.section | default: "contact" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">
+          {{ site.data.sitetext[site.locale].contact.title | markdownify | default: Contact Us }}
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 text-center">
+        <p class="section-heading"><b>Email:</b> {{ site.data.sitetext[site.locale].contact.email }}</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d565162.8012449575!2d-77.66494144808377!3d39.07791427621286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63bf71619c973%3A0x86d91f3d79ea0884!2sJanelia%20Research%20Campus!5e0!3m2!1sen!2sus!4v1652207690224!5m2!1sen!2sus" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-lg-6 text-center">
+        <p class="section-heading">
+          <a href="{{ site.data.sitetext[site.locale].contact.twitter_url }}" target="_blank">
+            <i class="fab fa-twitter"></i> Follow us on Twitter!
+          </a>
+        </p>
+        <!-- <a class="twitter-timeline" data-width="450" data-height="300" data-theme="light" href="https://twitter.com/snownontrace?ref_src=twsrc%5Etfw">Tweets by shaohewanglab</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+        <a class="twitter-timeline" data-width="450" data-height="300" data-theme="light" href="https://twitter.com/shaohewanglab?ref_src=twsrc%5Etfw">Tweets by shaohewanglab</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact -->
